@@ -2,11 +2,12 @@
 	<style>
 html {
 	font-family: "Helvetica Neue";
-  background-color: #23292f;
+  background-color: #383c40;
 	text-align: center;
   }
-
-
+#linker {
+  color: white;
+}
 	/*#babebf;*/
 #styleit {
 	display: block;
@@ -19,7 +20,7 @@ html {
 		margin-top: none ;
 	}
 #instructions {
-	font-size: 2rem;
+	font-size: 1.4rem;
 }
 #instructions1{
 
@@ -27,14 +28,18 @@ html {
 		padding: 5%;
 }
 #instructions2{
-/*Instructions 1-4 are not used atm, but if I want to I can make them
-individually styled*/
+width:75%;
+margin-left: auto;
+margin-right: auto;
 }
 #instructions3{
-  height: 8%;
-}
-#instructions4{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
+#instructions4{
+  color: white;
 }
 #button {
 	display: block;
@@ -153,6 +158,7 @@ individually styled*/
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
   <a href="5000mAh.html"> &le; 5000 mAh</a>
   <a href="5000-10000mAh.html">5000-10,000 mAh</a>
   <a href="10000+mAh.html">10,000+ mAh</a>
@@ -164,25 +170,51 @@ individually styled*/
 </p>
 <div id="instructions">
 <p>
-	<div id="instructions1">
+	<div id="instructions1" max-width="50%">
 
-  </div>
-	<div id="instructions2">
-A powerplant in your pocket!
   </div>
   <br>
 	<br>
 	<div id="instructions2">
-	Hand picked, High Quality Power Banks for all situations
+	There are a wide variety of powerbanks with varied charge capacities (measured in mAh) and uses.
+  Below is a guide detailing which Power Bank should suit your needs.
   </div>
 	<br>
+  <div id="instructions4" >
+	<a href="5000mAh.html" id="linker">	&le;5000mAh</a>
 	<br>
+</div>
+<div id="instructions3">
+  Portability over power. These are for topping up your device throughout the day. Able to recharge a phone once or twice before it requires recharging. Great for fitting in a pocket or purse.
+  <br>
+  <br>
+	</div>
+  <div id="instructions4">
+	<a href="5000-10000mAh.html" id="linker">	5000-10,000mAh</a>
 	<br>
+</div>
+  <div id="instructions3">
+  Perfect for recharging several devices throughout your week, or one phone up to 10 times! Sizeable amount of power in a not-so-sizeable package.
+  <br>
+  <br>
+	</div>
+  <div id="instructions4">
+<a href="10000+mAh.html" id="linker">	10,000+mAh</a>
+	<br>
+</div>
+<div id="instructions3">
+For the real power users! The Power Bank for people who need some serious juice! Fill one of these bad boys up and your tablet or phone won't see a low battery warning for weeks. A veritable powerplant in your pocket.
+  <br>
+  <br>
+	</div>
 	<div id="instructions4">
-	Wide range of 1,000 to 50,000 mAh Power Banks
+	<a href="solarpowered.html" id="linker">	Solar Powered</a>
 	<br>
-	All rated <img <img vertical align="center" src="star.svg" width="50rem" ><img <img vertical align="center" src="star.svg" width="50rem"><img <img vertical align="center" src="star.svg" width="50rem"><img <img vertical align="center" src="star.svg" width="50rem"> or above
+	</div>
+  <div id="instructions3">
+The Power Bank for the user who likes the outdoors. Trades convenience for the ability to charge through the power of the sun! Harness light to charge your phone, so not perfect for those living in England.
   </div>
+  <br>
 </p>
 <br>
 </div>
@@ -192,9 +224,6 @@ A powerplant in your pocket!
 </div>
 <br>
 <br>
-<div id="button2" onclick="location.href='needs.html';" style="font-size:30px;cursor:pointer" >
-	<div id="spreetext2">Which Power Bank suits your needs? </span>
-	</div>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
